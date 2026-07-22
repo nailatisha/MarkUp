@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pembayaran — Mark-Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">M<span class="logo-mark-alt">M</span><span class="logo-dot"></span></span>
+      <span class="logo-word">Mark-Up</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="program.html">Program</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="nav-login">Masuk</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section section-white">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Pembayaran</h2>
+      <p class="section-sub">Transfer sesuai total tagihan, lalu unggah bukti pembayaran di bawah.</p>
+
+      <div class="card-form payment-card">
+        <div class="payment-info">
+          <p class="payment-label">Transfer ke rekening</p>
+          <p class="payment-account">BCA 123 456 7890 a.n. Mark-Up Mentorship</p>
+          <p class="payment-amount">Paket: <strong id="payment-package-value">—</strong></p>
+          <p class="payment-amount">Total tagihan: <strong id="payment-amount-value">—</strong></p>
+        </div>
+
+        <div class="form-row">
+          <label for="bukti">Upload bukti transfer</label>
+          <input type="file" id="bukti" name="bukti">
+        </div>
+
+        <button type="button" id="btn-upload-bukti" class="btn btn-primary btn-full">Kirim Bukti Transfer</button>
+
+        <div id="status-pembayaran" class="status-box status-pending">
+          <span class="status-dot"></span>
+          <span>Status: menunggu konfirmasi admin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom:0.8rem;">
+        <span class="logo-mark">M<span class="logo-mark-alt">M</span><span class="logo-dot"></span></span>
+        <span class="logo-word" style="color:#fff;">Mark-Up</span>
+      </div>
+      <p>Platform mentorship untuk mahasiswa dan siswa SMA yang ingin berprestasi di Business Case & Business Plan Competition.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Jelajahi</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="login.html">Masuk ke Akun</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <ul>
+        <li>halo@markup.id</li>
+        <li>+62 812-0000-0000</li>
+        <li>Depok, Jawa Barat</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Mark-Up. Seluruh hak cipta dilindungi.</span>
+  </div>
+</footer>
+
+<script src="programs-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Program — Mark-Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">M<span class="logo-mark-alt">M</span><span class="logo-dot"></span></span>
+      <span class="logo-word">Mark-Up</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="program.html">Program</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="nav-login">Masuk</a>
+      <a href="daftar.html" class="btn btn-primary btn-small">Daftar Sekarang</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Katalog Program</h1>
+    <p>Pilih paket sesuai jenjang dan jenis kompetisi yang kamu ikuti.</p>
+  </section>
+
+  <section class="section section-white">
+    <div class="section-inner">
+
+      <div class="filter-bar">
+        <span class="filter-label">Filter:</span>
+        <button class="chip chip-active" data-filter="all">Semua</button>
+        <button class="chip" data-filter="bpc">BPC</button>
+        <button class="chip" data-filter="bcc">BCC</button>
+        <button class="chip" data-filter="sma">SMA</button>
+        <button class="chip" data-filter="mahasiswa">Mahasiswa</button>
+      </div>
+
+      <div class="program-grid">
+
+        <article class="program-card" data-tags="bpc sma mahasiswa">
+          <span class="program-tag">BPC</span>
+          <h3>BPC Kickstart</h3>
+          <p class="program-desc">Fondasi menyusun business plan dari nol: ideation, business model canvas, sampai draft executive summary.</p>
+          <ul class="program-meta">
+            <li>5 sesi mentoring</li>
+            <li>Cocok untuk pemula</li>
+          </ul>
+          <div class="program-footer">
+            <span class="program-price">Mulai Rp 200rb</span>
+            <a href="program-detail.html?slug=bpc-kickstart" class="btn btn-outline btn-small">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="program-card" data-tags="bpc mahasiswa">
+          <span class="program-tag">BPC</span>
+          <h3>BPC Level-Up</h3>
+          <p class="program-desc">Lanjutan Kickstart — memperdalam financial projection, go-to-market strategy, dan simulasi Q&A juri.</p>
+          <ul class="program-meta">
+            <li>5 sesi mentoring</li>
+            <li>Untuk peserta babak semifinal ke atas</li>
+          </ul>
+          <div class="program-footer">
+            <span class="program-price">Mulai Rp 250rb</span>
+            <a href="program-detail.html?slug=bpc-levelup" class="btn btn-outline btn-small">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="program-card" data-tags="bcc sma mahasiswa">
+          <span class="program-tag">BCC</span>
+          <h3>Essential Sprint</h3>
+          <p class="program-desc">Latihan intensif membaca dan menganalisis studi kasus dalam waktu terbatas, dengan framework siap pakai.</p>
+          <ul class="program-meta">
+            <li>3 sesi mentoring</li>
+            <li>Fokus 1 babak kompetisi</li>
+          </ul>
+          <div class="program-footer">
+            <span class="program-price">Mulai Rp 180rb</span>
+            <a href="program-detail.html?slug=essential-sprint" class="btn btn-outline btn-small">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="program-card" data-tags="bcc mahasiswa">
+          <span class="program-tag">BCC</span>
+          <h3>Full-Throttle Coaching</h3>
+          <p class="program-desc">Pendampingan penuh dari babak penyisihan sampai final: analisis kasus, deck, hingga simulasi presentasi ke "juri".</p>
+          <ul class="program-meta">
+            <li>8 sesi mentoring</li>
+            <li>Prioritas jadwal & review deck</li>
+          </ul>
+          <div class="program-footer">
+            <span class="program-price">Mulai Rp 350rb</span>
+            <a href="program-detail.html?slug=full-throttle-coaching" class="btn btn-outline btn-small">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="program-card" data-tags="bpc bcc mahasiswa">
+          <span class="program-tag">Bundling</span>
+          <h3>Bundling PowerPack</h3>
+          <p class="program-desc">Gabungan BCC & BPC coaching untuk peserta yang ikut dua jenis kompetisi sekaligus dalam satu musim.</p>
+          <ul class="program-meta">
+            <li>10 sesi mentoring</li>
+            <li>Hemat dibanding beli terpisah</li>
+          </ul>
+          <div class="program-footer">
+            <span class="program-price">Mulai Rp 450rb</span>
+            <a href="program-detail.html?slug=bundling-powerpack" class="btn btn-outline btn-small">Lihat Detail</a>
+          </div>
+        </article>
+
+        <article class="program-card" data-tags="sma">
+          <span class="program-tag">Kelas Reguler</span>
+          <h3>Kelas Reguler Baru</h3>
+          <p class="program-desc">Kelas mingguan berkelompok untuk siswa SMA yang baru mengenal dunia BCC/BPC, dari dasar hingga siap ikut kompetisi pertama.</p>
+          <ul class="program-meta">
+            <li>5 pertemuan kelompok</li>
+            <li>Kelas maksimal 15 peserta</li>
+          </ul>
+          <div class="program-footer">
+            <span class="program-price">Mulai Rp 150rb</span>
+            <a href="program-detail.html?slug=kelas-reguler-baru" class="btn btn-outline btn-small">Lihat Detail</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom:0.8rem;">
+        <span class="logo-mark">M<span class="logo-mark-alt">M</span><span class="logo-dot"></span></span>
+        <span class="logo-word" style="color:#fff;">Mark-Up</span>
+      </div>
+      <p>Platform mentorship untuk mahasiswa dan siswa SMA yang ingin berprestasi di Business Case & Business Plan Competition.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Jelajahi</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="login.html">Masuk ke Akun</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <ul>
+        <li>halo@markup.id</li>
+        <li>+62 812-0000-0000</li>
+        <li>Depok, Jawa Barat</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Mark-Up. Seluruh hak cipta dilindungi.</span>
+  </div>
+</footer>
+
+<script src="programs-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

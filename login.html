@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk — Mark-Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">M<span class="logo-mark-alt">M</span><span class="logo-dot"></span></span>
+      <span class="logo-word">Mark-Up</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="program.html">Program</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="program.html" class="btn btn-primary btn-small">Daftar Sekarang</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="login-page">
+    <div class="login-box">
+      <div class="login-box-title">
+        <h1>Masuk ke Akun</h1>
+        <p>Gunakan nomor WhatsApp yang kamu daftarkan sebelumnya.</p>
+      </div>
+
+      <div class="card-form" id="login-card">
+        <div id="login-step-phone">
+          <div class="form-row">
+            <label for="login-wa">Nomor WhatsApp</label>
+            <input type="tel" id="login-wa" placeholder="08xxxxxxxxxx">
+          </div>
+          <button type="button" id="btn-kirim-otp" class="btn btn-primary btn-full">Kirim Kode OTP</button>
+        </div>
+
+        <div id="login-step-otp" class="hidden">
+          <div class="otp-display" id="otp-display">
+            Kode OTP Anda: <strong id="otp-code">------</strong>
+            <span class="otp-note">berlaku untuk beberapa menit ke depan</span>
+          </div>
+          <div class="form-row">
+            <label for="otp-input">Masukkan kode OTP</label>
+            <input type="text" id="otp-input" maxlength="6" placeholder="6 digit kode">
+          </div>
+          <button type="button" id="btn-verifikasi-otp" class="btn btn-primary btn-full">Verifikasi & Masuk</button>
+        </div>
+
+        <div id="login-result" class="status-box hidden"></div>
+      </div>
+
+      <p class="form-note" style="margin-top:1.2rem;">Belum punya akun? <a href="program.html" style="color:var(--color-magenta); font-weight:600;">Daftar lewat halaman Program</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="logo" style="margin-bottom:0.8rem;">
+        <span class="logo-mark">M<span class="logo-mark-alt">M</span><span class="logo-dot"></span></span>
+        <span class="logo-word" style="color:#fff;">Mark-Up</span>
+      </div>
+      <p>Platform mentorship untuk mahasiswa dan siswa SMA yang ingin berprestasi di Business Case & Business Plan Competition.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Jelajahi</h4>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="login.html">Masuk ke Akun</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <ul>
+        <li>halo@markup.id</li>
+        <li>+62 812-0000-0000</li>
+        <li>Depok, Jawa Barat</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Mark-Up. Seluruh hak cipta dilindungi.</span>
+  </div>
+</footer>
+
+<script src="programs-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
